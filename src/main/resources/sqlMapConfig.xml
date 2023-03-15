@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--读取外部properties配置文件-->
+    <properties resource="application.properties"></properties>
+    <!--别名扫描的包路径-->
+    <typeAliases>
+        <package name="com.air.entity"/>
+    </typeAliases>
+    <!--数据源-->
+    <environments default="mysql">
+        <environment id="mysql">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${spring.datasource.driver-Class-Name}"></property>
+                <property name="url" value="${spring.datasource.url}"></property>
+                <property name="username" value="${spring.datasource.username}"></property>
+                <property name="password" value="${spring.datasource.password}"></property>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--映射文件扫描包路径-->
+    <mappers>
+        <package name="com.air.dao"></package>
+    </mappers>
+</configuration>

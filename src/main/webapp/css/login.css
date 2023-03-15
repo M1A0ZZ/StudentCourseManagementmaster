@@ -1,0 +1,64 @@
+body{
+    background-image:url("/img/bk1.jpg");
+}
+
+.middle_column{
+    margin:auto auto;
+    margin-top: 200px;
+    width: 500px;
+    height: 330px;
+    border: 1px solid red;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+.zh_title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 8px 0;
+}
+.en_title{
+    font-size: 18px;
+    text-align: center;
+    color: rgb(183, 147, 126);
+    margin-bottom: 20px;
+}
+
+.layui-form-item{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.layui-form-label{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.layui-input-block>.account_input{
+    width: 320px;
+    height: 30px;
+}
+.layui-input-block > .role_input{
+    margin-top: 8px;
+    margin-left: 10px;
+    width: 23px;
+    height: 23px;
+}
+.layui-input-block > .left_input{
+    margin-left: 3px;
+}
+
+.layui-form-item > .role_title{
+    width: 112px;
+}
+
+.label{
+    text-align: center;
+    font-size: 16px;
+    height: 36px;
+}
+.layui-btn-lg{
+    margin-top: 40px;
+    margin-left: 180px;
+    width: 100px;
+    height: 40px;
+}
